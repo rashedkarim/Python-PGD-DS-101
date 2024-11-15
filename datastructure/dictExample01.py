@@ -12,29 +12,11 @@ In Bangladesh the cultivation of temperate fruits has been unsuccessful, except 
 # print(txt)
 
 
-# fruitSet = set()
-#
-# for x in txt.replace(',', '').replace('.', '').split(" "):
-#     if x in myFruits:
-#         fruitSet.add(x)
-# print(fruitSet)
-
-# fruit frequency
-def fruitFrequency(txt):
-    myFruits = ['apple', 'banana', 'guava', 'olive']
-    fruitsDict = dict()
-    for x in txt.replace(',', '').replace('.', '').split(" "):
-        if x in myFruits:
-            if x in fruitsDict.keys():
-                fruitsDict[x] = fruitsDict[x] + 1
-            else:
-                fruitsDict[x] = 1
-    print(fruitsDict)
-
-
 result = dict()
 result = f.characterFrequency(txt, ['a', 'e', 'i', 'o', 'u'])
 for k, v in result.items():
     print(f"{k} : {v} times")
 
 result = f.wordFrequency(txt, ['apple', 'banana', 'guava', 'olive'])
+for k, v in result.items():
+    print(f"{k} : {v} times")
